@@ -1,0 +1,851 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Matty Boy Streetwear: Outfit Inspiration and Style Guide</title>
+
+  <meta name="description" content="Discover Matty Boy streetwear inspiration, graphic clothing, everyday outfit combinations, styling tips, and ways to build a wardrobe that reflects your personality.">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --navy: #14243a;
+      --navy-light: #213954;
+      --orange: #ff914d;
+      --orange-light: #fff0e5;
+      --white: #ffffff;
+      --background: #f4f6fa;
+      --text: #344054;
+      --muted: #697586;
+      --border: #e2e7ef;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 25px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    a {
+      transition: color 0.2s ease;
+    }
+
+    .header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 19px 22px;
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--white);
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: var(--orange);
+    }
+
+    .header-note {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #d5dfed;
+    }
+
+    .hero {
+      background:
+        radial-gradient(
+          circle at 90% 10%,
+          rgba(255, 145, 77, 0.18),
+          transparent 32%
+        ),
+        linear-gradient(135deg, #14243a, #213954);
+      color: var(--white);
+      padding: 85px 24px 90px;
+    }
+
+    .hero-inner {
+      max-width: 940px;
+      margin: auto;
+    }
+
+    .hero-label {
+      display: inline-block;
+      background: var(--orange);
+      color: #17253a;
+      padding: 6px 13px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 23px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(35px, 6vw, 64px);
+      line-height: 1.13;
+      letter-spacing: -1.8px;
+      margin-bottom: 23px;
+    }
+
+    .hero h1 span {
+      color: var(--orange);
+    }
+
+    .hero p {
+      max-width: 690px;
+      color: #dce4ef;
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .hero-line {
+      width: 85px;
+      height: 5px;
+      background: var(--orange);
+      margin-top: 28px;
+      border-radius: 5px;
+    }
+
+    .main-layout {
+      max-width: 1120px;
+      margin: 55px auto;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 270px;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .article {
+      background: var(--white);
+      padding: clamp(24px, 4vw, 46px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 12px 35px rgba(20, 36, 58, 0.04);
+      min-width: 0;
+    }
+
+    .article h2 {
+      color: var(--navy);
+      font-size: clamp(24px, 3vw, 31px);
+      line-height: 1.35;
+      margin: 46px 0 18px;
+      padding-left: 15px;
+      border-left: 4px solid var(--orange);
+    }
+
+    .article h2:first-child {
+      margin-top: 0;
+    }
+
+    .article h3 {
+      color: var(--navy);
+      font-size: 20px;
+      line-height: 1.45;
+      margin: 24px 0 10px;
+    }
+
+    .article p {
+      margin-bottom: 19px;
+    }
+
+    .article strong {
+      color: var(--navy);
+    }
+
+    .article a.anchor-link {
+      color: #c65d20;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: var(--orange);
+      text-underline-offset: 4px;
+      text-decoration-thickness: 2px;
+    }
+
+    .article a.anchor-link:hover {
+      color: var(--navy);
+    }
+
+    .intro-note {
+      background: #f0f4fa;
+      border-radius: 9px;
+      border: 1px solid #e0e8f3;
+      padding: 22px;
+      margin: 24px 0;
+    }
+
+    .intro-note p {
+      margin: 0;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 17px;
+      margin: 26px 0;
+    }
+
+    .feature-card {
+      background: #f8f9fc;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 23px;
+      transition: transform 0.25s ease,
+                  box-shadow 0.25s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(20, 36, 58, 0.08);
+    }
+
+    .feature-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 9px;
+      background: var(--orange-light);
+      color: #b74f14;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    .feature-card h3 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .style-steps {
+      list-style: none;
+      margin: 23px 0;
+      counter-reset: style;
+    }
+
+    .style-steps li {
+      counter-increment: style;
+      position: relative;
+      padding: 15px 15px 15px 55px;
+      margin-bottom: 12px;
+      background: #f8f9fc;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+    }
+
+    .style-steps li::before {
+      content: counter(style, decimal-leading-zero);
+      position: absolute;
+      left: 15px;
+      top: 17px;
+      color: #bd591f;
+      background: var(--orange-light);
+      font-weight: 900;
+      font-size: 12px;
+      padding: 3px 5px;
+      border-radius: 4px;
+    }
+
+    .tip-box {
+      background: var(--orange-light);
+      border-left: 4px solid var(--orange);
+      border-radius: 0 9px 9px 0;
+      padding: 21px;
+      margin: 25px 0;
+    }
+
+    .tip-box p {
+      margin: 0;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 20px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .sidebar-card {
+      background: var(--white);
+      padding: 23px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .sidebar-card h3 {
+      color: var(--navy);
+      font-size: 17px;
+      margin-bottom: 14px;
+    }
+
+    .toc {
+      list-style: none;
+    }
+
+    .toc li {
+      border-bottom: 1px solid #edf0f5;
+    }
+
+    .toc a {
+      display: block;
+      padding: 10px 0;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .toc a:hover {
+      color: #c65d20;
+    }
+
+    .sidebar-dark {
+      background: var(--navy);
+      color: var(--white);
+      border-color: var(--navy);
+    }
+
+    .sidebar-dark h3 {
+      color: var(--white);
+    }
+
+    .sidebar-dark p {
+      color: #dce4ef;
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 10px 0 0;
+    }
+
+    .quick-tips {
+      list-style: none;
+      margin-top: 14px;
+    }
+
+    .quick-tips li {
+      position: relative;
+      padding: 8px 0 8px 22px;
+      font-size: 14px;
+      border-bottom: 1px solid #edf0f5;
+    }
+
+    .quick-tips li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #c65d20;
+      font-weight: 900;
+    }
+
+    .conclusion-box {
+      background: #f1f5fa;
+      border: 1px solid #e1e8f2;
+      border-radius: 11px;
+      padding: 25px;
+      margin-top: 20px;
+    }
+
+    .conclusion-box h3 {
+      margin-top: 0;
+    }
+
+    .conclusion-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer {
+      background: var(--navy);
+      color: #dce4ef;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13px;
+    }
+
+    .footer p + p {
+      margin-top: 6px;
+      color: #aebdd0;
+    }
+
+    @media (max-width: 850px) {
+      .main-layout {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+      }
+
+      .sidebar {
+        position: static;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero {
+        padding: 65px 22px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body {
+        font-size: 15px;
+      }
+
+      .header-note {
+        display: none;
+      }
+
+      .main-layout {
+        padding: 0 12px;
+      }
+
+      .article {
+        padding: 23px 18px;
+      }
+
+      .feature-grid,
+      .sidebar {
+        grid-template-columns: 1fr;
+      }
+
+      .article h2 {
+        margin-top: 36px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="#top">MATTY <span>BOY</span></a>
+      <div class="header-note">Streetwear Style Journal</div>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <span class="hero-label">Style Inspiration</span>
+
+      <h1>Matty Boy Streetwear: <span>Fresh Outfit Ideas</span> for Everyday Style</h1>
+
+      <p>
+        Great streetwear is about more than following trends.
+        It is about finding comfortable pieces, trying new combinations,
+        and wearing clothes that feel like you. Discover practical
+        inspiration for creating your own everyday look.
+      </p>
+
+      <div class="hero-line"></div>
+    </div>
+  </section>
+
+  <main class="main-layout">
+
+    <article class="article">
+
+      <section id="introduction">
+        <h2>Getting to Know Matty Boy Streetwear</h2>
+
+        <p>
+          Some outfits look good because everything matches perfectly.
+          Others stand out because they have a little character. Streetwear
+          often falls into the second category, mixing relaxed clothing
+          with graphics, interesting colors, and personal touches.
+        </p>
+
+        <p>
+          <a class="anchor-link"
+             href="https://mattyboyofficial.us/"
+             target="_blank"
+             rel="noopener noreferrer">Matty Boy</a>
+          is associated with expressive streetwear aesthetics that appeal
+          to people who enjoy creative designs and casual fashion.
+          This style gives you room to experiment instead of feeling
+          that every outfit needs to follow a strict set of rules.
+        </p>
+
+        <p>
+          Think about the clothes you naturally reach for when getting
+          ready. Maybe you prefer oversized shirts, comfortable sneakers,
+          or hoodies that work with almost anything. Those everyday
+          favorites can become the foundation of a wardrobe that feels
+          more personal and put together.
+        </p>
+
+        <div class="intro-note">
+          <p>
+            <strong>The idea is simple:</strong> Wear what makes you
+            comfortable, add details you genuinely like, and build
+            outfits around your own preferences rather than chasing
+            every passing trend.
+          </p>
+        </div>
+      </section>
+
+      <section id="streetwear-elements">
+        <h2>The Details That Give Streetwear Its Character</h2>
+
+        <p>
+          Streetwear does not need to be complicated to look interesting.
+          Often, the appeal comes from a few details working together.
+          A graphic print, an oversized fit, or an unexpected color
+          combination can turn a basic outfit into something memorable.
+        </p>
+
+        <div class="feature-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon">01</div>
+            <h3>Expressive Graphics</h3>
+            <p>
+              Artwork and distinctive prints can make a simple T-shirt
+              the main feature of an outfit. Choose graphics that match
+              your personal taste.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">02</div>
+            <h3>Relaxed Fits</h3>
+            <p>
+              Loose shirts, roomy hoodies, and comfortable trousers
+              create an easygoing appearance while allowing you to
+              move freely throughout the day.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">03</div>
+            <h3>Everyday Comfort</h3>
+            <p>
+              Soft fabrics and practical clothing choices make it easier
+              to put together outfits that work for casual outings,
+              travel, and daily activities.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">04</div>
+            <h3>Personal Details</h3>
+            <p>
+              Sneakers, caps, watches, and bags can add personality
+              without requiring a completely new wardrobe.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="outfit-ideas">
+        <h2>Easy Outfit Ideas for Different Occasions</h2>
+
+        <p>
+          One of the best things about casual streetwear is how easily
+          you can adjust an outfit for different situations. A few
+          reliable clothing pieces can give you plenty of combinations.
+        </p>
+
+        <h3>For a Relaxed Day Out</h3>
+
+        <p>
+          Start with a graphic T-shirt, straight-leg jeans, and a
+          comfortable pair of sneakers. If the shirt has a colorful
+          design, keep the other pieces simple. This combination is
+          easy to wear and does not require much planning.
+        </p>
+
+        <h3>For Cooler Weather</h3>
+
+        <p>
+          Layer a hoodie over a basic T-shirt and pair it with jeans
+          or cargo pants. Neutral colors can make the outfit easier
+          to coordinate, while a distinctive graphic adds personality.
+          Choose layers that feel comfortable rather than bulky.
+        </p>
+
+        <h3>For a Weekend Get-Together</h3>
+
+        <p>
+          Try relaxed trousers, a well-fitting shirt, and clean
+          sneakers. A cap or simple accessory can finish the look.
+          The aim is to look put together without making the outfit
+          feel too formal.
+        </p>
+
+        <h3>For Warm Weather</h3>
+
+        <p>
+          A lightweight graphic T-shirt and casual shorts make a
+          practical combination for warmer days. Choose breathable
+          materials and comfortable footwear so your outfit works
+          as well as it looks.
+        </p>
+
+        <div class="tip-box">
+          <p>
+            <strong>Style tip:</strong> Before buying something new,
+            try combining it with three items already in your wardrobe.
+            If it works with several pieces, you are more likely to
+            get regular use out of it.
+          </p>
+        </div>
+      </section>
+
+      <section id="color-guide">
+        <h2>How to Combine Colors Without Overthinking</h2>
+
+        <p>
+          Choosing colors can feel difficult when a clothing item
+          already has a bold design. The easiest approach is to let
+          one piece take the spotlight and use the rest of the outfit
+          to create balance.
+        </p>
+
+        <ol class="style-steps">
+          <li>
+            <strong>Start with a neutral base.</strong>
+            Black, white, grey, and navy are easy to combine with
+            different graphic designs.
+          </li>
+
+          <li>
+            <strong>Choose one accent color.</strong>
+            Pick a color from your shirt or hoodie and repeat it
+            in a small accessory if you want a coordinated look.
+          </li>
+
+          <li>
+            <strong>Keep the overall outfit balanced.</strong>
+            If your top is oversized or features a busy print,
+            try simpler trousers and footwear.
+          </li>
+
+          <li>
+            <strong>Experiment with your own preferences.</strong>
+            Color combinations do not need to follow rigid rules.
+            Try different options and keep the ones you enjoy wearing.
+          </li>
+        </ol>
+
+        <p>
+          The most important thing is that the colors work together
+          in a way that feels right to you. Personal style develops
+          through experimentation, not by getting every combination
+          perfect on the first try.
+        </p>
+      </section>
+
+      <section id="buying-guide">
+        <h2>What to Consider Before Buying Streetwear</h2>
+
+        <p>
+          A design might catch your attention immediately, but there
+          are a few practical details worth checking before you buy.
+          These can make a difference in how comfortable the clothing
+          feels and how often you end up wearing it.
+        </p>
+
+        <h3>Fabric and Comfort</h3>
+
+        <p>
+          Think about when and where you plan to wear the item.
+          Breathable fabrics can be useful in warm weather, while
+          thicker materials may work better for layering in cooler
+          conditions. Always check the product description for
+          material information.
+        </p>
+
+        <h3>Fit and Measurements</h3>
+
+        <p>
+          Do not assume that the same size will fit identically across
+          every brand. Compare the listed measurements with a similar
+          item you already own. Pay attention to sleeve length,
+          garment length, and the overall fit.
+        </p>
+
+        <h3>Print Quality and Care</h3>
+
+        <p>
+          Read the garment care instructions before purchasing a
+          graphic item. Following the recommended washing method
+          can help preserve the fabric and print for longer.
+        </p>
+
+        <h3>Seller Information</h3>
+
+        <p>
+          When purchasing branded clothing online, review the retailer's
+          contact details, return policy, shipping terms, and available
+          evidence of product authenticity. Product photographs alone
+          are not enough to establish that an item is genuine.
+        </p>
+      </section>
+
+      <section id="wardrobe">
+        <h2>Building a Streetwear Wardrobe That Lasts</h2>
+
+        <p>
+          You can build a useful wardrobe gradually instead of buying
+          everything at once. Start with a few dependable basics, such
+          as plain T-shirts, jeans, comfortable sneakers, and a hoodie
+          that works with different outfits.
+        </p>
+
+        <p>
+          Once you know which fits and colors you prefer, add graphic
+          pieces that bring something different to your collection.
+          This makes it easier to create fresh combinations without
+          buying clothes simply because they are trending.
+        </p>
+
+        <p>
+          It also helps to think about how often you will wear each
+          item. Clothing that works for several occasions can offer
+          more value than a piece that only matches one specific outfit.
+          Comfort, durability, and versatility are all worth considering.
+        </p>
+
+        <p>
+          Finally, take care of what you own. Store clothing properly,
+          follow the washing instructions, and avoid washing garments
+          at unsuitable temperatures. Small habits can help your
+          favorite pieces stay in good condition.
+        </p>
+      </section>
+
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+
+        <div class="conclusion-box">
+          <h3>Find a Look That Feels Like You</h3>
+
+          <p>
+            Streetwear offers plenty of room to experiment with
+            graphics, relaxed fits, colors, and accessories. Matty Boy
+            is associated with this creative side of casual fashion,
+            making it a useful subject to explore if you enjoy
+            distinctive clothing and personal expression.
+          </p>
+
+          <p>
+            You do not need a large wardrobe to develop your own look.
+            Start with comfortable basics, experiment with different
+            combinations, and add statement pieces that fit your taste.
+            A little attention to color, fit, and fabric can go a long way.
+          </p>
+
+          <p>
+            Whether you prefer a simple T-shirt and jeans or a layered
+            hoodie outfit, the best choice is one that suits your
+            everyday life. Take your time, shop thoughtfully, and
+            enjoy finding combinations that feel natural to you.
+          </p>
+        </div>
+      </section>
+
+    </article>
+
+    <aside class="sidebar">
+
+      <div class="sidebar-card">
+        <h3>Explore the Guide</h3>
+
+        <nav aria-label="Table of contents">
+          <ul class="toc">
+            <li><a href="#introduction">Getting to Know Matty Boy</a></li>
+            <li><a href="#streetwear-elements">Streetwear Details</a></li>
+            <li><a href="#outfit-ideas">Everyday Outfit Ideas</a></li>
+            <li><a href="#color-guide">Color Combination Tips</a></li>
+            <li><a href="#buying-guide">Buying Streetwear</a></li>
+            <li><a href="#wardrobe">Building Your Wardrobe</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Quick Style Checklist</h3>
+
+        <ul class="quick-tips">
+          <li>Choose a comfortable fit</li>
+          <li>Balance bold graphics</li>
+          <li>Mix versatile basics</li>
+          <li>Check garment measurements</li>
+          <li>Follow clothing care labels</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card sidebar-dark">
+        <h3>Keep It Personal</h3>
+
+        <p>
+          The best streetwear outfits combine comfort with small
+          details that reflect your personality. Experiment until
+          you find combinations you genuinely enjoy.
+        </p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Matty Boy Streetwear Style Guide.</p>
+    <p>Casual fashion inspiration and practical everyday outfit ideas.</p>
+  </footer>
+
+</body>
+</html>
+```
